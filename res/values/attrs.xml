@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="drawableLeft" format="reference" />
+    <attr name="drawableRight" format="reference" />
+    <attr name="textTitle" format="reference" />
+    <attr name="drawableTitle" format="reference" />
+    <attr name="textRight" format="reference" />
+    <attr name="numberPickerStyle" format="reference" />
+    <attr name="solidColor" format="reference|color" />
+    <attr name="selectionDivider" format="reference" />
+    <attr name="selectionDividerHeight" format="dimension" />
+    <attr name="selectionDividersDistance" format="dimension" />
+    <attr name="internalMinHeight" format="dimension" />
+    <attr name="internalMaxHeight" format="dimension" />
+    <attr name="internalMinWidth" format="dimension" />
+    <attr name="internalMaxWidth" format="dimension" />
+    <attr name="internalLayout" format="reference" />
+    <attr name="virtualButtonPressedDrawable" format="reference" />
+    <attr name="ratio" format="float" />
+    <attr name="actionViewId" format="reference" />
+    <attr name="toolViewId" format="reference" />
+    <attr name="isNum" format="boolean" />
+    <attr name="width" format="dimension" />
+    <attr name="height" format="dimension" />
+    <attr name="selectColor" format="color" />
+</resources>

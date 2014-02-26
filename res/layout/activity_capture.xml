@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <SurfaceView android:layout_gravity="center" android:id="@id/preview_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.jingdong.lib.zxing.client.android.ViewfinderView android:id="@id/viewfinder_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <RelativeLayout android:gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="22.5dip" android:layout_marginTop="10.0dip" android:layout_marginRight="22.5dip" android:layout_marginBottom="@dimen/scan_margin_bottom" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/barcode_exit" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/app_close_icon" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <Button android:textSize="13.799988sp" android:textColor="@color/capture_text" android:id="@id/barcode_history" android:background="@drawable/app_manually_enter_btn" android:layout_width="90.0dip" android:layout_height="40.0dip" android:text="@string/scan_history" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <Button android:textSize="13.799988sp" android:textColor="@color/capture_text" android:id="@id/barcode_input" android:background="@drawable/app_manually_enter_btn" android:layout_width="90.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:text="@string/barcode_input_manual" android:layout_toLeftOf="@id/barcode_history" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

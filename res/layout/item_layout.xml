@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@drawable/personal_head_item_selector_bottom_corners" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/personal_label_textsize" android:textColor="@color/white" android:gravity="center" android:id="@id/personal_user_label_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/personal_label_name_margintop" android:layout_marginBottom="@dimen/personal_label_name_margin" />
+    <TextView android:textSize="@dimen/personal_label_textsize" android:textColor="@color/white" android:gravity="center" android:id="@id/personal_user_label_amount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/personal_user_label_name" />
+    <ImageView android:layout_gravity="top|right|center" android:id="@id/personal_user_label_item_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/personal_user_tip_margintop" android:layout_marginRight="@dimen/personal_user_tip_marginright" android:src="@drawable/color_shopping_new" android:scaleType="centerInside" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:contentDescription="@string/none" />
+</RelativeLayout>

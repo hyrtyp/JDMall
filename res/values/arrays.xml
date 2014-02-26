@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="lottery_category_color">
+        <item>\#ba0000</item>
+        <item>\#006baf</item>
+        <item>\#6c00a4</item>
+        <item>\#fb9109</item>
+        <item>\#fe8f00</item>
+        <item>\#3b9e00</item>
+        <item>\#008a78</item>
+        <item>\#858585</item>
+    </string-array>
+    <string-array name="lottery_category_draw_time">
+        <item>每周二、四、日开奖</item>
+        <item>每周一、三、六开奖</item>
+        <item>每周二、五、日开奖</item>
+        <item>十分钟一期 每天84期</item>
+        <item>每日开奖</item>
+        <item>每日开奖</item>
+        <item>每日开奖</item>
+    </string-array>
+    <string-array name="lottery_types">
+        <item>双色球</item>
+        <item>大乐透</item>
+        <item>七星彩</item>
+        <item>时时彩</item>
+        <item>福彩3D</item>
+        <item>排列三</item>
+        <item>排列五</item>
+        <item>期待中</item>
+    </string-array>
+    <string-array name="lottery_rules_title">
+        <item>投注方式</item>
+        <item>玩法设奖</item>
+        <item>中奖条件</item>
+        <item>开奖和返奖</item>
+    </string-array>
+    <string-array name="lottery_rules_content_doublecolor">
+        <item>"分为红球(01-33)和蓝球(01-16): 
+①单式投注:选择6个红球和1个蓝球. 
+②红球复式投注:选择7-20个红球和1个蓝球. 
+③蓝球复式投注:选择6个红球和2-16个蓝球. 
+④全复式投注:选择7-20个红球和2-16个蓝球."</item>
+        <item>"一等奖:当期高等奖奖金的70%1$和奖池中累积的奖金之和. 
+二等奖:当期高等奖奖金的30%2$. 
+三等奖:单注奖金3000元. 
+四等奖:单奖金注200元. 
+五等奖:单注奖金10元. 
+六等奖:单注奖金5元. 
+单注奖金最高可达1000万元."</item>
+        <item>"一等奖:中6个红球和1个蓝球 
+二等奖:中6个红球 
+三等奖:中5个红球和1个蓝球 
+四等奖:中5个红球或4个红球和1个蓝球 
+五等奖:中4个红球或3个红球和1个蓝球 
+六等奖:中1个蓝球"</item>
+        <item>"开奖:每周二、四、日21:30开奖,每周三期,中国教育电视台播出开奖实况. 
+返奖:小奖自动返还至京东帐户余额,大奖亲自领取或委托本站代为领取,永无弃奖."</item>
+    </string-array>
+    <string-array name="lottery_rules_content_daletou">
+        <item>"
+分为前区(01-35)和后区(01-12) 
+①单式投注:前区选择5个号码和后区选择2个号码. 
+②前区复式投注:前区选择6个或以上的号码和后区选择2个号码. 
+③后区复式投注:前区选择5个号码和后区选择3个或以上的号码. 
+④双区复式投注:前区选择6个或以上的号码和后区选择3个或以上的号码. 
+在基本投注的基础上,可进行追加投注,每注1元."</item>
+        <item>"一等奖:当期奖金额减去固定奖总额后的75%1$及奖池奖金. 
+二等奖:当期奖金额减去固定奖总额后的20%2$. 
+三等奖:当期奖金额减去固定奖总额后的5%3$. 
+四等奖:单注奖金3000元. 
+五等奖:单注奖金600元. 
+六等奖:单注奖金100元. 
+七等奖:单注奖金10元. 
+八等奖:单注奖金5元."</item>
+        <item>"一等奖 中5个前区号码及2个后区号码 
+二等奖 中5个前区号码及2个后区号码中的任意1个 
+三等奖 中5个前区号码 
+四等奖 中4个前区号码及2个后区号码 
+五等奖 中4个前区号码及2个后区号码中的任意1个 
+六等奖 中3个前区号码及2个后区号码或选中4个前区号码 
+七等奖 中3个前区号码及2个后区号码中的任意1个或选中2个前区号码及2个后区号码 
+八等奖 中3个前区号码或选中1个前区号码及2个后区号码或2个前区号码及2个后区号码中的任意1个或只选中2个后区号码 
+追加投注仅参与一至七等奖的分配,一至三等奖追加投注资金为当期基本投注对应单注奖金的60%1$,四到七等奖的追加投注奖金为当期基本本投注对应单注奖金的50%2$"</item>
+        <item>"开奖:每周一、三、六晚开奖,每周三期,CCTV－5《天天体彩》21:50～22:00播出开奖节目. 
+返奖:小奖自动返还至用户在本站帐户中,可继续投注或提款,大奖亲自领取或委托本站代为领取,永无弃奖."</item>
+    </string-array>
+    <string-array name="pg_post_paytype_payremark_city_arr">
+        <item>上海</item>
+        <item>北京</item>
+        <item>广州</item>
+        <item>成都</item>
+    </string-array>
+    <string-array name="pg_post_paytype_payremark_city_int_arr">
+        <item>3</item>
+        <item>6</item>
+        <item>10</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="pg_post_paytype_payremark_paymethod_arr">
+        <item>网上转帐</item>
+        <item>现金送存</item>
+        <item>柜面卡卡转存</item>
+        <item>ATM转帐</item>
+    </string-array>
+    <string-array name="pg_post_paytype_payremark_selectpayment_arr">
+        <item>邮政储蓄</item>
+        <item>邮局汇款</item>
+    </string-array>
+    <string-array name="pg_post_paytype_payremark_selectpayment_int_arr">
+        <item>205</item>
+        <item>206</item>
+    </string-array>
+    <string-array name="pg_new_feedback_contact_type">
+        <item>功能意见</item>
+        <item>界面意见</item>
+        <item>您的新需求</item>
+        <item>操作意见</item>
+        <item>流量问题</item>
+        <item>其他</item>
+    </string-array>
+    <string-array name="balance_string_array">
+        <item>使用</item>
+        <item>不使用</item>
+    </string-array>
+    <string-array name="msg_auto_update_frequency_entry">
+        <item>1分钟</item>
+        <item>5分钟</item>
+        <item>15分钟</item>
+        <item>30分钟</item>
+        <item>1小时</item>
+    </string-array>
+    <string-array name="msg_auto_update_frequency_value">
+        <item>1</item>
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+    </string-array>
+    <string-array name="app_more_activity_title_array">
+        <item>京东客服</item>
+        <item>搜索</item>
+        <item>浏览记录</item>
+        <item>设置</item>
+        <item>帮助</item>
+        <item>意见反馈</item>
+        <item>关于</item>
+        <item>退出</item>
+    </string-array>
+    <string-array name="app_personal_content_array">
+        <item>我的订单</item>
+        <item>我的关注</item>
+        <item>站内信息</item>
+        <item>优惠券、礼品卡</item>
+        <item>在线咨询</item>
+        <item>晒单评价</item>
+        <item>轻松购</item>
+    </string-array>
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/app_am_helper_heder" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="2.0">
+        <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/app_am_helper_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:singleLine="true" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+        <RadioGroup android:gravity="center" android:orientation="horizontal" android:id="@id/app_am_helper_radiogroup" android:background="@drawable/app_am_hepler_bg_corners" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="@dimen/annual_meeting_radiogroup_height" android:layout_marginLeft="25.0dip" android:layout_marginRight="25.0dip" android:layout_marginBottom="@dimen/annual_meeting_radiogroup_margin_bottom" android:layout_above="@id/app_am_helper_text" />
+        <ImageView android:id="@id/app_am_helper_back" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginTop="@dimen/shake_icon_layout_margintop" android:src="@drawable/am_shake_back" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+        <RelativeLayout android:id="@id/app_am_helper_rock_enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginRight="5.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_am_helper_rock_enter_2" />
+            <ImageView android:id="@id/app_am_helper_enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_am_helper_rock_enter_3" />
+            <ImageView android:id="@id/app_am_helper_enter_bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_am_helper_rock_enter_1" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/app_am_helper_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <ScrollView android:id="@id/app_am_helper_scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="32.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="20.0dip" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/app_am_helper_icon" android:layout_width="fill_parent" android:layout_height="0.0dip" android:src="@drawable/app_am_helper_default" android:scaleType="centerCrop" android:adjustViewBounds="true" android:layout_weight="1.0" android:contentDescription="@string/none" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:textColor="@color/black" android:gravity="center" android:id="@id/app_am_helper_content_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:src="@drawable/app_am_helper_default" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <Button android:id="@id/app_am_helper_refresh" android:background="@drawable/app_am_helper_refresh_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/activity_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_dialog_title" android:textColor="@color/dilaog_title_text_color" android:id="@id/fragment_payment_method_dialog_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dialog_title_margin_left" android:layout_marginTop="@dimen/dialog_title_margin_top" android:layout_marginBottom="@dimen/dialog_title_margin_bottom" android:text="@string/payment_method" />
+    <ImageView style="@style/line_dialog_title_style" />
+    <ScrollView android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="@dimen/payment_dialog_content_height">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+            <TextView android:textSize="@dimen/text_size_dialog_title" android:id="@id/fragment_payment_method_total_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:layout_marginBottom="16.0dip" android:text="@string/dialog_payment_total_moaney" android:singleLine="true" />
+            <ImageView style="@style/line_horizontal_style" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <RadioButton android:id="@id/fragment_payment_method_balance_radiobtn" android:clickable="false" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/LotteryRadioButtonStyle" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/fragment_payment_method_balance_radiobtn">
+                    <TextView android:textSize="@dimen/text_size_persional_info" android:id="@id/fragment_payment_method_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_payment_balance" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/payment_method_red" android:id="@id/fragment_payment_method_balance_unavailable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dialog_payment_balance_unavailable" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView style="@style/line_horizontal_style" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <RadioButton android:id="@id/fragment_payment_method_points_radiobtn" android:clickable="false" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/LotteryRadioButtonStyle" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/fragment_payment_method_points_radiobtn">
+                    <TextView android:textSize="@dimen/text_size_persional_info" android:id="@id/fragment_payment_method_points" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_payment_points" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/payment_method_red" android:id="@id/fragment_payment_method_points_unavailable" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dialog_payment_points_unavailable" android:singleLine="true" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView style="@style/line_horizontal_style" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="64.0dip">
+                <RadioButton android:id="@id/fragment_payment_method_coupon_radiobtn" android:clickable="false" android:layout_marginRight="10.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" style="@style/LotteryRadioButtonStyle" />
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_toLeftOf="@id/fragment_payment_method_coupon_radiobtn">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                        <TextView android:textSize="@dimen/text_size_persional_info" android:id="@id/fragment_payment_method_coupon_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dialog_payment_coupon_title" android:singleLine="true" />
+                        <TextView android:textSize="@dimen/text_size_12sp" android:id="@id/fragment_payment_method_coupon" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/dialog_payment_coupon_item_message" android:singleLine="true" />
+                    </LinearLayout>
+                    <com.jd.lottery.lib.ui.widget.FullSizeListView android:id="@id/fragment_payment_method_coupon_list" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView style="@style/line_horizontal_style" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="64.0dip">
+                <TextView android:textSize="@dimen/text_size_persional_info" android:id="@id/fragment_payment_method_online" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/dialog_payment_online" android:singleLine="true" android:layout_weight="1.0" />
+                <RadioButton android:id="@id/fragment_payment_method_online_radiobtn" android:layout_marginRight="10.0dip" style="@style/LotteryRadioButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <ImageView style="@style/line_horizontal_style" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/dialog_option_area_height">
+        <TextView android:id="@id/fragment_alert_dialog_cancle" android:text="@string/cancle" style="@style/dialog_action_btn_style" />
+        <ImageView style="@style/line_vertical_style" />
+        <TextView android:id="@id/fragment_alert_dialog_ok" android:text="@string/ok" style="@style/dialog_action_btn_style" />
+    </LinearLayout>
+</LinearLayout>

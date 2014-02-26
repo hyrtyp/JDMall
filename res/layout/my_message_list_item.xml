@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/my_message__ist_item_bg" android:paddingLeft="9.0dip" android:paddingTop="10.0dip" android:paddingRight="9.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="6.0dip" android:layout_marginRight="6.0dip">
+        <TextView android:textSize="12.0sp" android:id="@id/my_message_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+        <TextView android:textSize="13.0sp" android:ellipsize="end" android:id="@id/my_message_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@id/my_message_time" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/my_message_content_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_below="@id/my_message_title" android:layout_alignLeft="@id/my_message_title">
+            <RadioButton android:id="@id/my_messsage_arrow_more" android:background="@drawable/message_list_item_more_selector" android:focusable="true" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="4.0dip" android:checked="false" android:button="@drawable/none" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="13.0sp" android:gravity="center_vertical" android:autoLink="phone" android:id="@id/my_message_content" android:paddingRight="3.0dip" android:focusable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/my_messsage_arrow_more" android:lineSpacingMultiplier="1.1" />
+            <LinearLayout android:orientation="vertical" android:id="@id/my_message_ask_reply_layout" android:paddingRight="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/my_messsage_arrow_more">
+                <RelativeLayout android:id="@id/my_message_question_block" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/my_message_question_user" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lines="1" android:layout_toLeftOf="@id/my_message_question_time" android:layout_alignParentLeft="true" />
+                    <TextView android:textColor="#ff666666" android:id="@id/my_message_question_time" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" />
+                    <TextView android:textColor="#ff666666" android:id="@id/my_message_question_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:lines="1" android:layout_below="@id/my_message_question_user" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/my_message_answer_block" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                    <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:ellipsize="end" android:id="@id/my_message_jd_reply" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pg_my_message_consulted_by_jd" android:lines="1" android:layout_toLeftOf="@id/my_message_answer_time" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+                    <TextView android:textColor="#ff666666" android:id="@id/my_message_answer_time" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+                    <TextView android:textColor="#ff666666" android:id="@id/my_message_answer_body" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/my_message_jd_reply" />
+                </RelativeLayout>
+            </LinearLayout>
+            <RelativeLayout android:id="@id/my_message_action" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/my_message_content" android:layout_alignLeft="@id/my_message_content" android:layout_alignRight="@id/my_message_content">
+                <ImageView android:id="@id/my_message_product_icon" android:background="@drawable/background_corners" android:padding="2.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:scaleType="fitCenter" />
+                <TextView android:textSize="13.0sp" android:textColor="#ff666666" android:id="@id/my_message_product_content" android:paddingLeft="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="4" android:layout_toRightOf="@id/my_message_product_icon" android:layout_alignBaseline="@id/my_message_product_icon" android:lineSpacingMultiplier="1.1" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <View android:id="@id/my_message_devider" android:background="@drawable/dashed_line" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="11.0dip" android:layout_below="@id/my_message_content_layout" />
+        <RelativeLayout android:id="@id/my_message_detail_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:layout_below="@id/my_message_devider">
+            <TextView android:textSize="13.0sp" android:id="@id/my_message_detail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_message_item_look_detail" android:layout_alignParentLeft="true" />
+            <ImageView android:id="@id/my_messsage_arrow_detail" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="4.0dip" android:src="@drawable/android_list_idex" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

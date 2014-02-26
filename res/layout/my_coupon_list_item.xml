@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:padding="10.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/background_corners_white_no_line" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textColor="@color/white" android:id="@id/my_coupon_list_item_type" android:padding="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/font_red" android:id="@id/my_coupon_list_item_money_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:text="@string/my_coupon_money" android:layout_toRightOf="@id/my_coupon_list_item_type" android:layout_alignBottom="@id/my_coupon_list_item_type" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/font_red" android:id="@id/my_coupon_list_item_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/my_coupon_list_item_money_label" android:layout_alignBottom="@id/my_coupon_list_item_money_label" />
+        <View android:id="@id/my_coupon_list_item_line" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/my_coupon_list_item_money" style="@style/line1" />
+        <TextView android:id="@id/my_coupon_list_item_id_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_id" android:layout_below="@id/my_coupon_list_item_line" />
+        <TextView android:id="@id/my_coupon_list_item_id" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/my_coupon_list_item_id_label" android:layout_alignTop="@id/my_coupon_list_item_id_label" />
+        <TextView android:id="@id/my_coupon_list_item_consumption_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_consumption" android:layout_below="@id/my_coupon_list_item_id" />
+        <TextView android:id="@id/my_coupon_list_item_consumption" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/my_coupon_list_item_consumption_label" android:layout_alignTop="@id/my_coupon_list_item_consumption_label" />
+        <TextView android:id="@id/my_coupon_list_item_validity_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_validity" android:layout_below="@id/my_coupon_list_item_consumption" />
+        <TextView android:id="@id/my_coupon_list_item_validity" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/my_coupon_list_item_validity_label" android:layout_alignTop="@id/my_coupon_list_item_validity_label" />
+        <TextView android:id="@id/my_coupon_list_item_scope_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_scope" android:layout_below="@id/my_coupon_list_item_validity" />
+        <TextView android:id="@id/my_coupon_list_item_scope" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/my_coupon_list_item_scope_label" android:layout_alignTop="@id/my_coupon_list_item_scope_label" />
+    </RelativeLayout>
+</FrameLayout>

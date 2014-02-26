@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textColor="@color/black" android:id="@id/detail_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="@string/content_order_status" />
+    <TextView android:textColor="@color/red" android:id="@id/detail_order_status_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/detail_order_status" android:layout_alignBottom="@id/detail_order_status" />
+    <TextView android:textColor="@color/black" android:id="@id/detail_order_id_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/order_bumber" android:layout_below="@id/detail_order_status" />
+    <TextView android:textColor="@color/black" android:id="@id/detail_order_id_number_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/detail_order_id_number" android:layout_below="@id/detail_order_status" />
+    <Button android:id="@id/order_handle_button" android:focusable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/comment_my_order_check_logistics" android:layout_alignParentRight="true" />
+</RelativeLayout>

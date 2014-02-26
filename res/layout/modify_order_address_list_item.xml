@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/View_modify_order_address_list_item_top_gap" android:layout_width="fill_parent" android:layout_height="10.0dip" />
+    <LinearLayout android:id="@id/layout_modify_order_address_list_item_root" android:background="@drawable/modify_order_address_list_item_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/View_modify_order_address_list_item_top_gap">
+        <RelativeLayout android:orientation="vertical" android:id="@id/layout_modify_order_address_list_item_content" android:background="@drawable/cart_item_single_top_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:minHeight="@dimen/modify_order_address_listview_item_height" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/imageview_modify_order_address_list_mid" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+                    <TextView android:textSize="@dimen/modify_order_address_name_text_size" android:textColor="@color/modify_order_address_anme_text_color" android:id="@id/textview_modify_order_address_list_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+                    <TextView android:textSize="@dimen/modify_order_address_name_text_size" android:textColor="@color/modify_order_address_anme_text_color" android:gravity="right" android:id="@id/textview_modify_order_address_list_item_phone" android:layout_width="110.0dip" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textColor="@color/modify_order_address_text_color" android:id="@id/textview_modify_order_address_list_item_address" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+                <TextView android:textColor="@color/modify_order_address_text_color" android:id="@id/textview_modify_order_address_list_item_msg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="13.0dip" />
+            </LinearLayout>
+            <View android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_below="@id/imageview_modify_order_address_list_mid" />
+        </RelativeLayout>
+        <AbsoluteLayout android:id="@id/layout_modify_order_address_list_item_modify" android:background="#ffefefef" android:layout_width="55.0dip" android:layout_height="fill_parent" android:layout_margin="1.0dip">
+            <ImageView android:background="@drawable/modify_order_address_cut_line" android:layout_width="7.0dip" android:layout_height="fill_parent" />
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:background="@drawable/modify_order_address_edit" android:layout_width="29.0dip" android:layout_height="29.0dip" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </AbsoluteLayout>
+    </LinearLayout>
+    <ImageView android:id="@id/imageview_modify_order_address_list_item" android:background="@drawable/modify_order_address_selected" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_below="@id/View_modify_order_address_list_item_top_gap" />
+</RelativeLayout>

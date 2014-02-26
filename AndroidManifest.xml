@@ -1,0 +1,261 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest android:versionCode="7665" android:versionName="3.1.1" package="com.jingdong.app.mall"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <uses-feature android:name="android.hardware.camera" android:required="false" />
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false" />
+    <uses-feature android:name="android.hardware.location" android:required="false" />
+    <uses-feature android:name="android.hardware.location.gps" android:required="false" />
+    <uses-feature android:name="android.hardware.location.network" android:required="false" />
+    <uses-feature android:name="android.hardware.wifi" android:required="false" />
+    <uses-feature android:name="android.hardware.microphone" android:required="false" />
+    <supports-screens android:anyDensity="true" android:smallScreens="true" android:normalScreens="true" android:largeScreens="true" />
+    <application android:theme="@style/applicationTheme" android:label="@string/app_name" android:icon="@drawable/jd_buy_icon" android:name=".MyApplication">
+        <meta-data android:name="Ja_Sdk_ID" android:value="JdAndroidPhone_ja" />
+        <meta-data android:name="Ja_Sdk_CHANNEL" android:value="JdAndroidPhone_ja" />
+        <meta-data android:name="Ja_Sdk_SEND_STRATEGY" android:value="" />
+        <meta-data android:name="Ja_Sdk_EXCEPTION_LOG" android:value="true" />
+        <meta-data android:name="JD_APPKEY" android:value="20095" />
+        <meta-data android:name="JD_CHANNEL" android:value="jingdong" />
+        <meta-data android:name="JD_ACCESSKEY" android:value="96d4e673f2094c4a8dac297afeb85c3b" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:label="@string/app_name" android:name=".MainActivity" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".plug.framework.dynamicloader.PlugsMainActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:label="@string/app_name" android:name=".MainFrameActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="locale|keyboardHidden|orientation" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".ErrorActivity" android:process=":error" android:launchMode="singleTask" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".amHelper.AmHelperActivity" />
+        <activity android:name=".amHelper.AmCheckinActivity" />
+        <activity android:theme="@style/msDialogTheme" android:name=".home.PanicBuyingActivity" android:screenOrientation="portrait" />
+        <activity android:name=".WebActivity" />
+        <activity android:name=".WebActivityLandscape" android:screenOrientation="landscape" android:configChanges="touchscreen|keyboard|navigation|orientation|screenLayout|uiMode|fontScale" />
+        <activity android:name=".home.slide.WebSlideAcvtivity" />
+        <activity android:name=".home.slide.PromotionSlideActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".more.MoreActivity" />
+        <activity android:name=".home.NewHomeActivity" android:windowSoftInputMode="stateHidden" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name=".personel.PersonelActivity" />
+        <activity android:name=".personel.MyOrderInfoListActivity" />
+        <activity android:name=".personel.MyOrderListActivity" />
+        <activity android:name=".personel.CheckMyOrderDetail" />
+        <activity android:name=".personel.MyOrderDetailActivity" />
+        <activity android:name=".personel.MyCollectActivity" />
+        <activity android:name=".personel.MyCommentDiscussActivity" />
+        <activity android:name=".personel.MakeNewDiscuss" />
+        <activity android:name=".personel.MakeNewComments" />
+        <activity android:name=".personel.MakeNewBuyAsk" />
+        <activity android:name=".personel.MyBackAndExchangeActivity" />
+        <activity android:name=".personel.MyAccountSecurityActivity" />
+        <activity android:name=".personel.MyCouponAndGiftCardActivity" />
+        <activity android:name=".personel.MyWebMessage" />
+        <activity android:name=".personel.MyMessageShow" />
+        <activity android:name=".jdnews.JdNewsListActivity" />
+        <activity android:name=".jdnews.JdNewsDetailActivity" />
+        <activity android:name=".category.CategoryActivity" />
+        <activity android:name=".category.CategoryListActivity" />
+        <activity android:name=".product.ProductFilterActivity" />
+        <activity android:name=".product.SearchFilterActivity" />
+        <activity android:name=".product.LimitBuyListActivity" />
+        <activity android:name=".product.ProductListActivity" android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable" android:resource="@xml/searchable" />
+        </activity>
+        <activity android:name=".product.CommercialRuleActivity" />
+        <activity android:name=".product.ProductDetailActivity" />
+        <activity android:name=".product.ProductDetailNewActivity" />
+        <activity android:name=".product.PriceReportActivity" />
+        <activity android:name=".product.PriceReportSuccessActivity" />
+        <activity android:name=".product.ImageActivity" />
+        <activity android:name=".product.ProductDetailInfoActivity" />
+        <activity android:name=".product.CommentListActivity" />
+        <activity android:name=".product.BuyAskListActivity" />
+        <activity android:name=".product.DiscussListActivity" />
+        <activity android:name=".product.DiscussDetailActivity" />
+        <activity android:name=".shopping.ShoppingCarActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.ShoppingCartNewActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.YanBaoActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.FillOrderActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.NewFillOrderActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.OrderCommodityActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.EditOrderAddressListActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.EditOrderAddressActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.ReceiptInfoEditActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.ReceiptInfoEditNewActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.SelectPaymentTypeActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.EditYouHuiLipinActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.CompleteOrderActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.EasyGoAddrListActivity" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.PacksListActivity" android:screenOrientation="portrait" />
+        <activity android:name=".login.LoginActivity" />
+        <activity android:name=".register.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name=".register.QuickRegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name=".register.QuickRegisterLoginActivity" android:screenOrientation="portrait" />
+        <activity android:name=".more.FeedbackActivity" />
+        <activity android:name=".more.HistoryListActivity" />
+        <activity android:name=".more.HelpActivity" />
+        <activity android:name=".more.SearchActivity" android:launchMode="singleTop" android:screenOrientation="portrait" android:windowSoftInputMode="stateVisible" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".more.SettingActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.Light.NoTitleBar" android:name=".more.PushMessageCategoryFilterSetting" android:screenOrientation="portrait" />
+        <activity android:name=".more.AboutActivity" />
+        <activity android:name=".search.CameraPurchaseActivity" />
+        <activity android:name=".search.EditorActivity" />
+        <activity android:name=".search.CPProductListActivity" />
+        <activity android:name=".search.CorrectionActivity" />
+        <activity android:name=".barcode.BarcodeActivity" android:launchMode="singleTask" />
+        <activity android:name=".personel.MyOrderPostPayConfirm" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".promotion.PromotionActivity" />
+        <activity android:name=".promotion.PromotionMessageActivity" />
+        <activity android:name=".promotion.PromotionProductListActivity" />
+        <activity android:name=".home.FloorProductListActivity" />
+        <activity android:name=".home.slide.LifeAssistantActivity" />
+        <activity android:name=".barcode.BarcodeInputActivity" android:screenOrientation="portrait" />
+        <activity android:theme="@*android:style/Theme.NoTitleBar.Fullscreen" android:name="com.jingdong.lib.zxing.client.android.CaptureActivity" android:launchMode="singleTask" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" android:windowSoftInputMode="stateAlwaysHidden" />
+        <activity android:name=".barcode.BarcodeProductListActivity" />
+        <activity android:name=".shopping.CameraActivity" />
+        <activity android:name=".color.BlankActivity" />
+        <activity android:name=".shake.ShakeActivity" />
+        <activity android:name=".amHelper.AmShakeActivity" />
+        <activity android:theme="@style/shake_dialog_style" android:name=".amHelper.AmShakeDialogNew" android:exported="false" android:screenOrientation="portrait" />
+        <activity android:name=".home.slide.SlideScreenActivity" />
+        <activity android:theme="@style/shake_dialog_style" android:name=".shake.ShakeDialogNew" android:screenOrientation="portrait" />
+        <activity android:name=".shopping.CategoriesSelectionActivity" android:screenOrientation="portrait" android:configChanges="keyboardHidden|orientation" />
+        <activity android:name=".color.SimilarProductListActivity" />
+        <activity android:name="com.jingdong.app.mall.signin.SignActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden" />
+        <activity android:name=".open.InterfaceActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+                <data android:scheme="openApp.jdMobile" />
+                <data android:scheme="openapp.jdmobile" />
+            </intent-filter>
+        </activity>
+        <receiver android:name=".broadcastReceiver.InterfaceBroadcastReceiver">
+            <intent-filter>
+                <action android:name="com.360buy.interfaceBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".widget.JdWidget" android:process=":service">
+            <meta-data android:name="android.appwidget.provider" android:resource="@xml/appwidget_provider" />
+            <intent-filter>
+                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.360buy.jdWidgetBroadcastReceiver" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastReceiver.ReActivationUserReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.ACTION_SHUTDOWN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="com.360buy.RE_ACTIVATION_USER" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastReceiver.PushMsgTaskReceiver">
+            <intent-filter>
+                <action android:name="com.360buy.PUSH_MSG_TASK" />
+            </intent-filter>
+        </receiver>
+        <receiver android:label="NetworkConnection" android:name=".broadcastReceiver.NetworkBroadcast">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+        <service android:label="@string/pull_service_title" android:name="com.jingdong.common.service.MessagePullService" android:process=":service" />
+        <service android:name=".service.ForwardActionService" />
+        <service android:name="com.ja.sdk.JaMobLogService" android:enabled="true" />
+        <service android:name=".home.PanicBuyingService" />
+        <receiver android:name=".home.PanicBuyingReceive">
+            <intent-filter>
+                <action android:name="com.jingdong.app.mall.panicbuying" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.unionpay.upomp.bypay.activity.SplashActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.CardMainActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayMainActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayItActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.PayResultActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.AccountMainActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.LoginActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.RegisterActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.GetpassActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.ResetpassActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.EditpassActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.EditinfoActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.AddCardActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.UserProtocalActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.CheckCardBalanceActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.CardInfoActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.CardBalanceResultActivity" android:screenOrientation="portrait" />
+        <activity android:name="com.unionpay.upomp.bypay.activity.CardBankResultActivity" android:screenOrientation="portrait" />
+        <provider android:name=".plug.framework.download.DownloadDBProvider" android:exported="false" android:authorities="com.jingdong.app.mall.provider" />
+        <activity android:name="com.jd.lottery.lib.activity.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.LOTTERY_MAIN" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.activity.LotteryActivity" />
+        <activity android:name="com.jd.lottery.lib.activity.ConfirmListActivity" android:windowSoftInputMode="adjustResize" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.activity.EditPersonalInfoActivity" />
+        <activity android:theme="@*android:style/Theme.Translucent" android:name="com.jd.lottery.lib.activity.OnLinePayLaunchActivity" />
+        <activity android:theme="@style/JDTheme.Light.NoActionBar" android:name="com.jd.lottery.lib.activity.ConfirmOrderActivity" />
+        <service android:name="com.jd.lottery.lib.service.DataIntentService" />
+        <activity android:theme="@*android:style/Theme.Translucent.NoTitleBar" android:name="com.jingdong.app.lib.base.activity.JDActivity" />
+        <meta-data android:name="droidlib_dependency_provider" android:value="com.jd.lottery.lib.DependencyProvider" />
+        <meta-data android:name="droidlib_log_level" android:value="warn" />
+        <receiver android:name=".broadcastReceiver.AppStateRecevier">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+                <action android:name="android.intent.action.PACKAGE_RESTARTED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver android:name=".broadcastReceiver.DateChangedRecevier">
+            <intent-filter>
+                <action android:name="android.intent.action.DATE_CHANGED" />
+                <action android:name="android.intent.action.TIME_SET" />
+            </intent-filter>
+        </receiver>
+        <service android:name="com.jingdong.cloud.msg.service.JDReceiveMsgService" />
+        <receiver android:name=".broadcastReceiver.CloudMessageReceiver">
+            <intent-filter>
+                <action android:name="com.jd.msg" />
+                <action android:name="com.jd.register.action" />
+            </intent-filter>
+        </receiver>
+        <meta-data android:name="JD_PUSH_APPID" android:value="jdapp" />
+    </application>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="com.android.launcher.permission.UNINSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES" />
+    <uses-permission android:name="android.permission.KILL_BACKGROUND_PROCESSES" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.REORDER_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+</manifest>

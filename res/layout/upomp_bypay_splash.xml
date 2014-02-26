@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/rl_pay_main_loading" android:background="@drawable/upomp_bypay_loading" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ProgressBar android:id="@id/p_splash_progress" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="30.0dip" android:indeterminateDrawable="@drawable/upomp_bypay_progress_init" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffffffff" android:id="@id/tv_pay_main_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/upomp_bypay_splash_loading" android:layout_below="@id/p_splash_progress" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tv_pay_main_version" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:text="@string/upomp_bypay_splash_version" android:layout_below="@id/tv_pay_main_loading" android:layout_centerHorizontal="true" />
+        <TextView android:textColor="#ffffffff" android:id="@id/tv_pay_main_inc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/upomp_bypay_splash_info" android:layout_below="@id/tv_pay_main_version" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="#ffffffff" android:id="@id/tv_pay_main_inc_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="©2002-2011" android:layout_below="@id/tv_pay_main_inc" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</RelativeLayout>

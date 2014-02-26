@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/my_giftcard_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/my_giftcard_description_layout" android:background="@drawable/bind_gift_card_description_bg" android:padding="7.0dip" android:layout_width="290.0dip" android:layout_height="68.0dip" android:layout_marginTop="5.0dip">
+            <TextView android:textSize="11.0sp" android:textColor="@color/bind_gift_card_description" android:gravity="center_vertical" android:id="@id/my_giftcard_description" android:paddingLeft="10.0dip" android:paddingRight="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/bind_giftcard_declar" android:layout_centerInParent="true" />
+        </RelativeLayout>
+        <Button android:layout_gravity="center_horizontal" android:id="@id/my_giftcard_bind" android:layout_width="154.0dip" android:layout_height="38.0dip" android:layout_marginTop="20.0dip" android:text="@string/bind_giftcard" style="@style/common_button" />
+        <com.jingdong.app.mall.utils.ui.JDListView android:layout_gravity="center_horizontal" android:id="@id/my_giftcard_list" android:background="@drawable/none" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:listSelector="@drawable/none" android:cacheColorHint="@drawable/none" android:divider="@null" />
+    </LinearLayout>
+</ScrollView>

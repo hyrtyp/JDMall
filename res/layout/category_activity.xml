@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/common_title" layout="@layout/title" />
+    <RelativeLayout android:id="@id/category_list_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title">
+        <ListView android:id="@id/category_main_list" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+        <RelativeLayout android:id="@id/category_main_empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/category_main_list" android:layout_alignTop="@id/category_main_list" android:layout_alignRight="@id/category_main_list" android:layout_alignBottom="@id/category_main_list">
+            <ProgressBar android:id="@id/category_main_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <include android:id="@id/main_loading_error_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+        </RelativeLayout>
+        <ListView android:id="@id/category_sub_list" android:background="@color/white" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:visibility="invisible" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:cacheColorHint="#00000000" />
+        <RelativeLayout android:id="@id/category_sub_empty" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@id/category_sub_list" android:layout_alignTop="@id/category_sub_list" android:layout_alignRight="@id/category_sub_list" android:layout_alignBottom="@id/category_sub_list">
+            <ProgressBar android:id="@id/category_sub_loading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+            <include android:id="@id/sublist_loading_error_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/loading_error_tips" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <View android:id="@id/category_top_stage" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/common_title" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/lip_list_view" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/li_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingMultiplier="1.1" />
+    <TextView android:id="@id/left_li_money" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="@string/left_balance" android:layout_toRightOf="@id/li_value" android:lineSpacingMultiplier="1.1" />
+    <TextView android:id="@id/left_li_money_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:text="50" android:layout_toRightOf="@id/left_li_money" android:lineSpacingMultiplier="1.1" />
+    <TextView android:id="@id/li_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_validity" android:layout_below="@id/li_value" android:layout_alignLeft="@id/li_value" android:lineSpacingMultiplier="1.1" />
+    <TextView android:id="@id/hui_end_time_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/select_coupon_end_time" android:layout_toRightOf="@id/li_end_time" android:layout_below="@id/li_value" android:lineSpacingMultiplier="1.1" />
+    <CheckBox android:id="@id/jing_select" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/login_remember" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

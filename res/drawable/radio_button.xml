@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_window_focused="false" android:state_checked="true" android:drawable="@drawable/identity_not_selecte_icon_disable" />
+    <item android:state_window_focused="false" android:state_checked="false" android:drawable="@drawable/identity_not_selecte_icon_disable" />
+    <item android:state_checked="true" android:state_pressed="true" android:drawable="@drawable/identity_not_selecte_icon_disable" />
+    <item android:state_checked="false" android:state_pressed="true" android:drawable="@drawable/identity_not_selecte_icon_disable" />
+    <item android:state_focused="true" android:state_checked="true" android:drawable="@drawable/identity_not_selecte_icon_disable" />
+    <item android:state_focused="true" android:state_checked="false" android:drawable="@drawable/identity_not_selecte_icon_disable" />
+    <item android:state_checked="false" android:drawable="@drawable/identity_not_selecte_icon_disable" />
+    <item android:state_checked="true" android:drawable="@drawable/identity_not_selecte_icon_hl" />
+    <item android:state_checkable="false" android:drawable="@drawable/identity_not_selecte_icon" />
+</selector>

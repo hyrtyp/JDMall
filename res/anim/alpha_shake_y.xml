@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <alpha android:duration="500" android:fromAlpha="0.0" android:toAlpha="1.0" />
+    <translate android:interpolator="@anim/cycle" android:duration="50" android:fillAfter="true" android:startOffset="500" android:repeatCount="3" android:repeatMode="restart" android:fromYDelta="0.0" android:toYDelta="-10.0" />
+</set>

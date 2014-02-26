@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <PreferenceCategory android:title="@string/menu_setup_message_title" android:key="@string/msg_auto_update_switch_category">
+        <CheckBoxPreference android:title="@string/msg_auto_update_switch_title" android:key="@string/msg_auto_update_switch_key" android:defaultValue="true" android:summaryOn="@string/msg_auto_update_switch_summary_on" android:summaryOff="@string/msg_auto_update_switch_summary_off" />
+        <Preference android:title="@string/msg_auto_un_push_time_title" android:key="@string/msg_auto_un_push_time_key" android:summary="@string/msg_auto_un_push_time_summary" android:dependency="@string/msg_auto_update_switch_key" />
+        <Preference android:title="@string/msg_auto_update_category_filter_title" android:key="@string/msg_auto_update_category_filter_key" android:dependency="@string/msg_auto_update_switch_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/menu_setup_no_image_title">
+        <CheckBoxPreference android:title="@string/no_image_switch_title" android:key="@string/no_image_switch_key" android:defaultValue="false" android:shouldDisableView="false" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/location_set">
+        <PreferenceScreen android:title="@string/location_update_title" android:key="@string/location_update_key" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/local_cache_setup_title">
+        <PreferenceScreen android:title="@string/local_cache_clear_image_title" android:key="@string/local_cache_clear_image_key" />
+    </PreferenceCategory>
+</PreferenceScreen>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@id/detail_order_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/content_order_status" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/red" android:id="@id/detail_order_status_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/detail_order_status" android:layout_alignBottom="@id/detail_order_status" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@id/detail_order_id_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_bumber" android:layout_below="@id/detail_order_status" />
+    <TextView android:textSize="12.0dip" android:textColor="@color/black" android:id="@id/detail_order_id_number_comment" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/detail_order_id_number" android:layout_below="@id/detail_order_status" />
+    <Button android:textColor="@color/white" android:id="@id/order_handle_button" android:background="@drawable/android_my_order_no_pay_button" android:focusable="false" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="33.0dip" android:layout_alignParentRight="true" />
+</RelativeLayout>

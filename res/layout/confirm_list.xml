@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/activity_bg" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:stuan="http://schemas.android.com/apk/res-auto/com.jd.lottery.lib">
+    <com.jd.lottery.lib.ui.widget.StuanTitle android:id="@id/titlebar" android:layout_width="fill_parent" android:layout_height="wrap_content" stuan:drawableRight="@drawable/touzhu_delete_icon_selector" stuan:textTitle="@string/bet_list" />
+    <LinearLayout android:orientation="horizontal" android:background="@drawable/touzhu_add_btn_bg" android:layout_width="fill_parent" android:layout_height="47.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/add_special" android:background="@drawable/confirm_list_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.5dip" android:layout_marginRight="14.5dip" android:src="@drawable/touzhu_add_icon" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_shouxuan" />
+        </LinearLayout>
+        <ImageView android:paddingTop="16.5dip" android:paddingBottom="15.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/touzhu_line" android:scaleType="fitXY" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/add_random" android:background="@drawable/confirm_list_btn_selector" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.5dip" android:layout_marginRight="14.5dip" android:src="@drawable/touzhu_add_icon" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/add_random" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:layout_gravity="center_vertical" android:id="@id/list" android:background="@color/bg_normal" android:scrollbars="none" android:fadingEdge="none" android:layout_width="fill_parent" android:layout_height="0.0dip" android:listSelector="@drawable/list_selector" android:drawSelectorOnTop="false" android:divider="@drawable/divider" android:layout_weight="1.0" />
+    <LinearLayout android:background="@drawable/touzhu_shadow_down" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:orientation="horizontal" android:paddingTop="13.5dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/lianmai" />
+            <EditText android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/numbers" android:background="@drawable/shape_touzhu_number_input_bg" android:layout_width="49.0dip" android:layout_height="29.0dip" android:hint="1" android:maxLines="1" android:inputType="number" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/qi" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:layout_marginRight="12.0dip" android:text="@string/beishu" />
+            <EditText android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/times" android:background="@drawable/shape_touzhu_number_input_bg" android:layout_width="49.0dip" android:layout_height="29.0dip" android:hint="1" android:maxLines="1" android:inputType="number" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:text="@string/bei" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="7.5dip">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/check" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.5dip" android:layout_marginRight="11.0dip" android:src="@drawable/touzhu_choice_icon" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/text_gray" android:layout_gravity="center_vertical" android:id="@id/check_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/stop_zhuihao" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/touzhu_line" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:text="@string/total_money" />
+        <TextView android:textSize="16.0sp" android:textColor="#ffff0017" android:layout_gravity="center_vertical" android:id="@id/total" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff333333" android:gravity="right|center" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" />
+    </LinearLayout>
+    <FrameLayout android:layout_gravity="center" android:background="@drawable/touzhu_confirm_btn" android:layout_width="92.0dip" android:layout_height="33.5dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="4.0dip">
+        <TextView android:textSize="16.0sp" android:textColor="@*android:color/white" android:gravity="center" android:id="@id/submit" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/confirm" />
+    </FrameLayout>
+    <LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="horizontal" android:padding="0.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="4.0dip">
+        <CheckBox android:id="@id/check_aggrement" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/checkbox_slector" />
+        <TextView android:textSize="@dimen/text_size_12sp" android:textColor="@color/text_gray" android:layout_gravity="center_vertical" android:id="@id/check_aggrement_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/lottery_arrgement_link_text" android:singleLine="true" />
+    </LinearLayout>
+</LinearLayout>

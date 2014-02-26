@@ -1,0 +1,86 @@
+.class public Lcom/jingdong/common/utils/InputKeyFilter;
+.super Landroid/text/method/NumberKeyListener;
+.source "InputKeyFilter.java"
+
+
+# direct methods
+.method public constructor <init>()V
+    .locals 0
+
+    .prologue
+    .line 17
+    invoke-direct {p0}, Landroid/text/method/NumberKeyListener;-><init>()V
+
+    return-void
+.end method
+
+
+# virtual methods
+.method protected getAcceptedChars()[C
+    .locals 2
+
+    .prologue
+    .line 25
+    const/16 v1, 0x26
+
+    new-array v0, v1, [C
+
+    fill-array-data v0, :array_0
+
+    .line 27
+    .local v0, myChar:[C
+    return-object v0
+
+    .line 25
+    :array_0
+    .array-data 0x2
+        0x71t 0x0t
+        0x77t 0x0t
+        0x65t 0x0t
+        0x72t 0x0t
+        0x74t 0x0t
+        0x79t 0x0t
+        0x75t 0x0t
+        0x69t 0x0t
+        0x6ft 0x0t
+        0x70t 0x0t
+        0x6ct 0x0t
+        0x6bt 0x0t
+        0x6at 0x0t
+        0x68t 0x0t
+        0x67t 0x0t
+        0x66t 0x0t
+        0x64t 0x0t
+        0x73t 0x0t
+        0x61t 0x0t
+        0x7at 0x0t
+        0x78t 0x0t
+        0x63t 0x0t
+        0x76t 0x0t
+        0x62t 0x0t
+        0x6et 0x0t
+        0x6dt 0x0t
+        0x31t 0x0t
+        0x32t 0x0t
+        0x33t 0x0t
+        0x34t 0x0t
+        0x35t 0x0t
+        0x36t 0x0t
+        0x37t 0x0t
+        0x38t 0x0t
+        0x39t 0x0t
+        0x30t 0x0t
+        0x5ft 0x0t
+        0xat 0x0t
+    .end array-data
+.end method
+
+.method public getInputType()I
+    .locals 1
+
+    .prologue
+    .line 36
+    const/4 v0, 0x0
+
+    return v0
+.end method

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_item_layout" android:background="@drawable/app_home_item_bg" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/home_item_view" android:layout_width="fill_parent" android:layout_height="36.0dip">
+        <ImageView android:id="@id/home_item_left_icon" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="16.0sp" android:textColor="@color/black" android:ellipsize="end" android:id="@id/home_item_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:singleLine="true" android:layout_toRightOf="@id/home_item_left_icon" android:layout_centerVertical="true" />
+        <LinearLayout android:id="@id/home_item_center_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_toRightOf="@id/home_item_title" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/home_item_right_icon" android:layout_width="13.0dip" android:layout_height="13.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/android_order_trace_info_more" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

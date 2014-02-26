@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/dong_quan_list_view" android:paddingLeft="3.0dip" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+-
+<TextView android:id="@id/hui_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="test" android:lineSpacingMultiplier="1.1" />
+    <RadioButton android:id="@id/jing_select2" android:clickable="false" android:longClickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:button="@drawable/common_used_addr_radio" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    <TextView android:id="@id/hui_scope_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_scope" android:layout_below="@id/hui_name" android:layout_alignLeft="@id/hui_name" android:lineSpacingMultiplier="1.1" />
+    <TextView android:id="@id/hui_scope_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:layout_toLeftOf="@id/jing_select2" android:layout_toRightOf="@id/hui_scope_view" android:layout_below="@id/hui_name" android:lineSpacingMultiplier="1.1" />
+    <TextView android:id="@id/hui_end_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/my_coupon_validity" android:layout_below="@id/hui_scope_text" android:layout_alignLeft="@id/hui_name" android:lineSpacingMultiplier="1.1" />
+    <TextView android:id="@id/hui_end_time_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/select_coupon_end_time" android:layout_toLeftOf="@id/jing_select2" android:layout_toRightOf="@id/hui_end_time" android:layout_below="@id/hui_scope_text" android:lineSpacingMultiplier="1.1" />
+</RelativeLayout>

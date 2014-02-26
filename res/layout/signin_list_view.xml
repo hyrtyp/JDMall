@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <ImageButton android:id="@id/signin_list_icon" android:background="@drawable/signin_list_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/signin_white_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/signin_top" android:background="@drawable/signin_top_bg" android:layout_width="fill_parent" android:layout_height="180.0dip">
+                <Button android:textSize="28.0sp" android:textColor="@color/signin_white" android:gravity="top|center" android:id="@id/signin_jingdou" android:background="@drawable/signin_jingdou" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" />
+                <Button android:textSize="28.0sp" android:textColor="@color/signin_white" android:gravity="top|center" android:id="@id/signin_lianxu" android:background="@drawable/signin_lianxu" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                <Button android:textSize="28.0sp" android:textColor="@color/signin_white" android:gravity="top|center" android:id="@id/signin_leiji" android:background="@drawable/signin_leiji" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/signin_tv1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:layout_gravity="center_horizontal" android:id="@id/signin_tv2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+                <ImageButton android:id="@id/signin_img1" android:background="@drawable/signin_list" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true" />
+                <ImageButton android:id="@id/signin_img2" android:background="@drawable/signin_list_rule" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_toRightOf="@id/signin_img1" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageButton android:background="@drawable/signin_list_divider" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <ListView android:id="@id/signin_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@drawable/signin_list_divider" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

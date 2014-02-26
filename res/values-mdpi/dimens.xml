@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="login_selector_icon_delete">20.0dip</dimen>
+    <dimen name="product_detail_jdprice_paddingtop">0.0dip</dimen>
+    <dimen name="product_detail_jdprice_icon_paddingtop">2.0dip</dimen>
+    <dimen name="personal_label_xiang_icon_width">21.299988dip</dimen>
+    <dimen name="annual_meeting_font_size">14.0sp</dimen>
+    <dimen name="annual_meeting_padding">8.0dip</dimen>
+    <dimen name="random_list_hight">180.0dip</dimen>
+    <dimen name="lottery_item_title_size">20.0sp</dimen>
+    <dimen name="lottery_item_msg_size">8.0sp</dimen>
+    <dimen name="lottery_item_msg_layout_width">96.0dip</dimen>
+    <dimen name="lottery_banner_height">120.0dip</dimen>
+    <dimen name="lottery_activity_msg_marginLeft">32.0dip</dimen>
+    <dimen name="payment_dialog_content_height">230.0dip</dimen>
+    <dimen name="text_size_lottery_info">10.0sp</dimen>
+</resources>

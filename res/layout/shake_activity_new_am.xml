@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/am_shake_home_bg" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/shake_back_btn_marginleft" android:paddingRight="@dimen/shake_back_btn_marginleft" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/shake_home_icon_marginbottom" android:layout_centerHorizontal="true">
+        <Button android:gravity="top|left|center" android:id="@id/shake_back_btn" android:background="@drawable/am_shake_back" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/shake_back_btn_marginleft" android:layout_marginTop="@dimen/shake_icon_layout_margintop" android:layout_alignParentLeft="true" />
+        <RelativeLayout android:id="@id/shake_background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/shake_back_btn">
+            <ImageView android:id="@id/hand" android:background="@drawable/am_shake_hand" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" android:layout_centerHorizontal="true" />
+            <FrameLayout android:background="@drawable/am_shake_icon" android:paddingLeft="5.0px" android:paddingTop="8.0px" android:paddingRight="@dimen/shake_flash_marginRight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_centerHorizontal="true">
+                <ImageView android:layout_gravity="center" android:id="@id/loop" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="centerInside" />
+            </FrameLayout>
+        </RelativeLayout>
+        <ImageView android:id="@id/shake_bottom_background" android:visibility="gone" android:layout_width="86.0dip" android:layout_height="90.0dip" android:layout_marginTop="@dimen/shake_home_bottom_margintop" android:layout_marginBottom="@dimen/shake_home_icon_shadom_marginbottom" android:src="@drawable/shake_bottom_icon" android:layout_below="@id/shake_background" android:layout_centerHorizontal="true" android:contentDescription="@string/none" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/shake_bottom" android:paddingBottom="@dimen/shake_home_times_marginbotom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <TextView android:textSize="@dimen/shake_home_shake_time_size" android:textColor="@color/shake_title_content" android:gravity="center" android:id="@id/shake_bottom_time" android:background="@drawable/shake_number_times_bg" android:paddingLeft="@dimen/shake_bottom_time_padding_left" android:paddingRight="@dimen/shake_bottom_time_padding_left" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" style="@style/shake_textstyle" />
+        <ProgressBar android:gravity="center" android:id="@id/shake_loading_pb" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <FrameLayout android:id="@id/shake_bottom_shake_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="70.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <ImageView android:id="@id/shake_bottom_shake_first" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_am_helper_shake_bottom_anim_bg" android:contentDescription="@string/none" />
+        <ImageView android:id="@id/shake_bottom_shake" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_am_helper_shake_bottom_anim_icon" android:contentDescription="@string/none" />
+    </FrameLayout>
+    <include android:id="@id/shake_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" layout="@layout/app_am_helper_loading" />
+</RelativeLayout>

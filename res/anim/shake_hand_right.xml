@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set android:shareInterpolator="false" android:repeatCount="infinite"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <rotate android:duration="400" android:fromDegrees="0.0" android:toDegrees="45.0" android:pivotX="50.0%" android:pivotY="100.0%" android:toYScale="0.0" />
+    <set android:startOffset="400">
+        <rotate android:duration="400" android:fromDegrees="0.0" android:toDegrees="-45.0" android:pivotX="50.0%" android:pivotY="100.0%" android:toYScale="0.0" />
+    </set>
+    <set android:startOffset="800">
+        <rotate android:duration="400" android:fromDegrees="0.0" android:toDegrees="-45.0" android:pivotX="50.0%" android:pivotY="100.0%" android:toYScale="0.0" />
+        <set android:startOffset="400">
+            <rotate android:duration="400" android:fromDegrees="0.0" android:toDegrees="45.0" android:pivotX="50.0%" android:pivotY="100.0%" android:toYScale="0.0" />
+        </set>
+    </set>
+</set>

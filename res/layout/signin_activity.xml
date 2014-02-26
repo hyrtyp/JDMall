@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.DrawerLayout android:id="@id/drawer_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:id="@id/signin_view" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/qiandao_shouye" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:id="@id/qiandao_above" android:background="@drawable/signin_up_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3.3">
+                    <ImageButton android:id="@id/qiandao_back" android:background="@drawable/signin_back_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="20.0dip" />
+                    <ImageButton android:id="@id/qiandao_share" android:background="@drawable/signin_share_selector" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginRight="15.0dip" android:layout_alignParentRight="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/signin_white" android:id="@id/content_front" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:layout_marginBottom="15.0dip" android:text="@string/signin_content_front" android:layout_toLeftOf="@id/content_middle" android:layout_alignParentBottom="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/signin_white" android:gravity="center" android:id="@id/content_middle" android:background="@drawable/signin_count" android:paddingLeft="10.0dip" android:paddingRight="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="15.0dip" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+                    <TextView android:textSize="14.0sp" android:textColor="@color/signin_white" android:id="@id/content_behind" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="3.0dip" android:layout_marginBottom="15.0dip" android:text="@string/signin_content_behind" android:layout_toRightOf="@id/content_middle" android:layout_alignParentBottom="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/qiandao_middle" android:background="@drawable/signin_down_bg" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:background="@drawable/signin_below_bg_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="15.0dip">
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:layout_marginTop="12.0dip">
+                            <TextView android:textSize="14.0sp" android:textColor="@color/signin_gray" android:gravity="center" android:id="@id/continuous_num" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signin_continuous_num" />
+                            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:src="@drawable/signin_days" />
+                        </LinearLayout>
+                        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip">
+                            <LinearLayout android:gravity="center" android:id="@id/calendar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                                <LinearLayout android:orientation="horizontal" android:background="@drawable/signin_calendar_bg" android:layout_width="164.0dip" android:layout_height="58.0dip">
+                                    <ViewFlipper android:id="@id/calendar_vf_1" android:layout_width="48.0dip" android:layout_height="47.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                                    <ViewFlipper android:id="@id/calendar_vf_2" android:layout_width="48.0dip" android:layout_height="47.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                                    <ViewFlipper android:id="@id/calendar_vf_3" android:layout_width="48.0dip" android:layout_height="47.0dip" android:layout_marginLeft="5.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.54">
+                                <Button android:id="@id/qiandao_btn" android:background="@drawable/signin_selector" android:layout_width="100.0dip" android:layout_height="45.0dip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                        <ImageView android:id="@id/qiandao_split_line" android:background="@drawable/signin_split_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="2.0dip" />
+                        <LinearLayout android:orientation="vertical" android:background="@drawable/signin_below_bg_2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="15.0dip">
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/verify_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+                                <TextView android:textSize="15.0sp" android:textColor="@color/signin_gray" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/signin_verify" />
+                                <ImageView android:gravity="center_horizontal" android:id="@id/signin_verify_img" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" />
+                                <EditText android:textColorHint="@color/signin_light_gray" android:id="@id/signin_verify_result" android:layout_width="170.0dip" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:hint="@string/signin_verify_hint" />
+                                <Button android:gravity="center_horizontal" android:id="@id/signin_verify_commit" android:background="@drawable/signin_get_reward_selector" android:layout_width="140.0dip" android:layout_height="40.0dip" android:layout_marginTop="5.0dip" />
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/commom_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+                                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip">
+                                    <ImageView android:id="@id/notice_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/signin_notice_icon" />
+                                    <TextView android:textSize="16.0sp" android:textColor="@color/signin_gray" android:gravity="center_vertical" android:id="@id/content_1" android:paddingLeft="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signin_text1" />
+                                </LinearLayout>
+                                <TextView android:textSize="15.0sp" android:textColor="@color/signin_gray" android:id="@id/content_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="10.0dip" android:text="@string/signin_text2" />
+                                <LinearLayout android:orientation="horizontal" android:id="@id/loginOrleave" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                                    <Button android:id="@id/login" android:background="@drawable/signin_login_selector" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="7.5dip" android:layout_weight="1.0" />
+                                    <Button android:id="@id/leave" android:background="@drawable/signin_leave_selector" android:layout_width="120.0dip" android:layout_height="40.0dip" android:layout_marginLeft="7.5dip" android:layout_marginRight="15.0dip" android:layout_weight="1.0" />
+                                </LinearLayout>
+                            </LinearLayout>
+                            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/congratulation_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+                                <ImageView android:layout_width="72.0dip" android:layout_height="72.0dip" android:src="@drawable/signin_congratulate_bmp" />
+                                <TextView android:textSize="18.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/signin_congratulation" />
+                                <TextView android:textSize="14.0sp" android:id="@id/reward_txet" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                                <TextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/signin_congratulation_tip" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageButton android:id="@id/signin_main_icon" android:background="@drawable/signin_list_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.jingdong.app.mall.signin.SignListView android:layout_gravity="end" android:id="@id/right_drawer" android:layout_width="360.0dip" android:layout_height="fill_parent" />
+    </android.support.v4.widget.DrawerLayout>
+</LinearLayout>

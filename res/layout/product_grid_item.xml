@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:id="@id/product_grid_item_layout" android:background="@*android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@drawable/product_grid_item_bg" android:padding="@dimen/grid_item_content_padding" android:layout_width="@dimen/grid_item_content_width" android:layout_height="@dimen/grid_item_content_height">
+        <ImageView android:id="@id/product_item_image" android:layout_width="@dimen/grid_item_image_width" android:layout_height="@dimen/grid_item_image_height" android:scaleType="fitCenter" />
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_alignParentBottom="true">
+            <TextView android:textSize="14.0sp" android:textColor="@color/font_red" android:id="@id/product_item_jdPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="0.00" android:layout_centerVertical="true" />
+            <TextView android:id="@id/product_item_martPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="3.0dip" android:text="0.00" android:layout_toRightOf="@id/product_item_jdPrice" android:layout_centerVertical="true" />
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/product_item_jdPrice" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                <ImageView android:gravity="center" android:id="@id/product_item_grid_vip_icon" android:background="@drawable/product_price_vip" android:padding="1.0dip" android:visibility="gone" android:layout_width="@dimen/personal_label_xiang_icon_width" android:layout_height="@dimen/personal_label_xiang_icon_width" android:layout_marginLeft="4.6999817dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                <ImageView android:gravity="center" android:id="@id/product_item_grid_jiang_icon" android:background="@drawable/product_price_jiang" android:padding="1.0dip" android:visibility="gone" android:layout_width="@dimen/personal_label_xiang_icon_width" android:layout_height="@dimen/personal_label_xiang_icon_width" android:layout_marginLeft="4.6999817dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+                <ImageView android:gravity="center" android:id="@id/product_item_grid_zeng_icon" android:background="@drawable/product_price_zeng" android:padding="1.0dip" android:visibility="gone" android:layout_width="@dimen/personal_label_xiang_icon_width" android:layout_height="@dimen/personal_label_xiang_icon_width" android:layout_marginLeft="4.6999817dip" android:scaleType="fitCenter" android:adjustViewBounds="true" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

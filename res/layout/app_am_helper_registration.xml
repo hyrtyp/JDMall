@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/app_am_helper_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerHorizontal="true">
+        <TextView android:textSize="18.0sp" android:textStyle="bold" android:textColor="@color/white" android:id="@id/app_am_helper_username" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" />
+        <TextView android:textSize="18.0sp" android:textColor="@color/white" android:id="@id/app_am_helper_welcome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="京东集团  2014年会 欢迎您！" android:layout_below="@id/app_am_helper_username" />
+    </RelativeLayout>
+    <ImageView android:id="@id/app_am_helper_rock_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_am_helper_rock_bg" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/app_am_helper_rock" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/app_am_helper_rock" android:layout_centerInParent="true" />
+    <ImageView android:id="@id/app_am_helper_checkin_btn" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:src="@drawable/app_am_helper_checkin_btn" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

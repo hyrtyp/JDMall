@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/personal_user_coupon_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" style="@style/home_color_shopping_button">
+        <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:id="@id/personal_user_coupon" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_barcode" />
+        <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_coupon" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="@drawable/color_shopping_gap_line" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/personal_user_gift_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_weight="1.0" style="@style/home_color_shopping_button">
+        <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:id="@id/personal_user_gift" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_barcode" />
+        <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_gift" />
+    </LinearLayout>
+    <View android:layout_gravity="center_vertical" android:background="@drawable/color_shopping_gap_line" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" />
+    <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/personal_user_jd_pea_layout" android:visibility="visible" android:clickable="true" android:layout_width="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" style="@style/home_color_shopping_button">
+            <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:id="@id/personal_user_jd_pea_coupon" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_barcode" />
+            <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:paddingLeft="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_jd_pea" />
+        </LinearLayout>
+        <ImageView android:layout_gravity="top|right|center" android:id="@id/personal_jd_pea_tip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginRight="1.0dip" android:src="@drawable/color_shopping_new" android:scaleType="centerInside" android:adjustViewBounds="true" />
+    </FrameLayout>
+    <View android:layout_gravity="center_vertical" android:background="@drawable/color_shopping_gap_line" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_centerHorizontal="true" />
+    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/personal_user_balance_layout" android:clickable="true" android:layout_width="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_weight="1.0" style="@style/home_color_shopping_button">
+        <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:id="@id/personal_user_balance" android:paddingLeft="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/search_barcode" />
+        <TextView android:textSize="@dimen/color_shopping_button_textsize" android:textStyle="bold" android:textColor="@color/white" android:paddingLeft="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/personal_balance" />
+    </LinearLayout>
+</LinearLayout>

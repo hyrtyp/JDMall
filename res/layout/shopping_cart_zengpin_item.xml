@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@drawable/cart_product_yb_bg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/cart_product_name" android:layout_gravity="left|center" android:id="@id/cart_single_product_zengpin_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="60.0dip" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff838383" android:gravity="center" android:layout_gravity="right|center" android:id="@id/cart_product_zengpin_delete_button" android:background="@drawable/shopping_cart_yb_delete_but_default" android:visibility="gone" android:layout_width="55.0dip" android:layout_height="30.0dip" android:text="@string/delete" />
+</FrameLayout>

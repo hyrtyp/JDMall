@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="#ffdae3ec" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:focusable="true" android:focusableInTouchMode="true" android:layout_width="0.0dip" android:layout_height="0.0dip" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="70.0dip">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/upomp_bypay_navigator" />
+            <RelativeLayout android:id="@id/rl_username_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/rl_header">
+                <RelativeLayout android:background="@drawable/upomp_bypay_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <RelativeLayout android:id="@id/rl_username_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_username_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_addcard_binduser" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_username_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/rl_username_title_add_card" android:layout_centerVertical="true">
+                        <TextView android:textSize="15.0sp" android:textColor="#ffff0000" android:id="@id/tv_username_content_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="sd" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_body_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/rl_username_add_card">
+                <RelativeLayout android:id="@id/rl_cardtype_add_card" android:background="@drawable/upomp_bypay_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                    <RelativeLayout android:id="@id/rl_cardtype_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_cardtype_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_selectcard" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_cardtype_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/rl_cardtype_title_add_card" android:layout_centerVertical="true">
+                        <RadioGroup android:orientation="horizontal" android:id="@id/rg_card_type_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:checkedButton="@id/cb_type_2_add_card">
+                            <RadioButton android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/cb_type_2_add_card" android:button="@drawable/upomp_bypay_my_radiobutton" android:text="@string/upomp_bypay_creditcard" />
+                            <RadioButton android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/cb_type_1_add_card" android:layout_marginLeft="5.0dip" android:button="@drawable/upomp_bypay_my_radiobutton" android:text="@string/upomp_bypay_debitcard" />
+                        </RadioGroup>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_card_id_add_card" android:background="@drawable/upomp_bypay_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/rl_cardtype_add_card">
+                    <RelativeLayout android:id="@id/rl_card_id_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_card_id_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_firstcardid" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_card_id_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/rl_card_id_title_add_card">
+                        <EditText android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/et_card_id_content_add_card" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/upomp_bypay_secondcardid" android:singleLine="true" android:maxLength="23" android:numeric="integer" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_card_valid_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/rl_card_id_add_card">
+                    <RelativeLayout android:id="@id/rl_card_pass_add_card" android:background="@drawable/upomp_bypay_input_bg" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                        <RelativeLayout android:id="@id/rl_card_pass_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_card_pass_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_firstcardpsw" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/rl_card_pass_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/rl_card_pass_title_add_card">
+                            <Button android:textColor="#ff000000" android:gravity="left|center" android:id="@id/btn_card_pass_content_add_card" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="40.0dip" android:hint="@string/upomp_bypay_secondcardpsw" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_validaty_add_card" android:background="@drawable/upomp_bypay_input_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip">
+                        <RelativeLayout android:id="@id/rl_validaty_title_add_card" android:layout_width="wrap_content" android:layout_height="40.0dip">
+                            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="center_vertical" android:id="@id/tv_validaty_title_add_card" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_date" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/rl_validaty_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/rl_validaty_title_add_card">
+                            <RelativeLayout android:id="@id/rl_btn_mm_add_card" android:background="@drawable/upomp_bypay_btn_month" android:layout_width="90.0dip" android:layout_height="40.0dip">
+                                <Button android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="left|center" android:id="@id/btn_mm_add_card" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+                            </RelativeLayout>
+                            <RelativeLayout android:id="@id/rl_btn_yy_add_card" android:background="@drawable/upomp_bypay_btn_year" android:layout_width="90.0dip" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:layout_toRightOf="@id/rl_btn_mm_add_card">
+                                <Button android:textSize="15.0sp" android:textColor="#ff000000" android:gravity="left|center" android:id="@id/btn_yy_add_card" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" />
+                            </RelativeLayout>
+                            <EditText android:textColor="#ff000000" android:id="@id/et_validaty_content_add_card" android:visibility="gone" android:layout_width="100.0dip" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="4" android:numeric="integer" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_cvn2_add_card" android:background="@drawable/upomp_bypay_input_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/rl_validaty_add_card">
+                        <RelativeLayout android:id="@id/rl_cvn2_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_cvn2_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_addcard_cvn2" />
+                        </RelativeLayout>
+                        <RelativeLayout android:id="@id/rl_cvn2_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/rl_cvn2_title_add_card">
+                            <Button android:textColor="#ff000000" android:gravity="left|center" android:id="@id/et_cvn2_content_add_card" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:hint="@string/upomp_bypay_backnum" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_telnum_add_card" android:background="@drawable/upomp_bypay_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/rl_card_valid_add_card">
+                    <RelativeLayout android:id="@id/rl_telnum_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_telnum_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_firstmobilenum" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_telnum_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:layout_toRightOf="@id/rl_telnum_title_add_card">
+                        <EditText android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_telnum_content_add_card" android:background="#00000000" android:layout_width="fill_parent" android:layout_height="40.0dip" android:singleLine="true" android:maxLength="11" android:numeric="integer" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_mobilevalidcode_add_card" android:background="@drawable/upomp_bypay_input_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="8.0dip" android:layout_marginRight="15.0dip" android:layout_below="@id/rl_telnum_add_card">
+                    <RelativeLayout android:id="@id/rl_mobilevalidcode_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/tv_mobilevalidcode_title_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="@string/upomp_bypay_firstshortmessagesecuritycode" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rl_mobilevalidcode_content_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="0.0dip" android:layout_toRightOf="@id/rl_mobilevalidcode_title_add_card">
+                        <EditText android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/et_mobilevalidcode_add_card" android:background="#00000000" android:layout_width="120.0dip" android:layout_height="40.0dip" android:hint="@string/upomp_bypay_secondshortmessagesecuritycode" android:singleLine="true" android:maxLength="6" android:numeric="integer" />
+                        <Button android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/btn_mobilevalidcode_add_card" android:background="@drawable/upomp_bypay_input_btn4" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_marginLeft="5.0dip" android:text="@string/upomp_bypay_get" android:layout_alignParentRight="true" />
+                    </RelativeLayout>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/rl_use_default_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_below="@id/rl_mobilevalidcode_add_card">
+                    <CheckBox android:textSize="15.0sp" android:textColor="#ff000000" android:id="@id/cb_use_default_add_card" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:button="@drawable/upomp_bypay_my_checkbox" android:text="@string/upomp_bypay_addcard_selectdefultcard" android:layout_centerHorizontal="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/rl_pay_button_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/rl_body_add_card">
+                <RelativeLayout android:id="@id/rl_pay_add_card" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btn_addcard_add_card" android:background="@drawable/upomp_bypay_btn_enter" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:text="@string/upomp_bypay_affirm" android:layout_alignParentLeft="true" />
+                    <Button android:textSize="20.0sp" android:textColor="#ffffffff" android:id="@id/btn_return_add_card" android:background="@drawable/upomp_bypay_btn_esc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="15.0dip" android:text="@string/upomp_bypay_return" android:layout_alignParentRight="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+    <com.unionpay.upomp.bypay.view.MainBottom android:id="@id/main_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

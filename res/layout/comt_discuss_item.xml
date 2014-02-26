@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="8.0dip" android:paddingTop="5.0dip" android:paddingRight="8.0dip" android:paddingBottom="3.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/android_my_order_item_bg" android:padding="1.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/image_text_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="85.0dip">
+            <ImageView android:id="@id/cd_product_item_image" android:background="@drawable/background_corners" android:padding="5.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginLeft="10.0dip" android:scaleType="fitCenter" android:layout_centerVertical="true" />
+            <TextView android:textColor="#ff000000" android:ellipsize="end" android:id="@id/cd_product_item_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="18.0dip" android:lines="4" android:layout_toRightOf="@id/cd_product_item_image" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/order_comment_discuss_layout" android:background="@color/commentdiscuss_bottom_layout_color" android:layout_width="fill_parent" android:layout_height="65.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/image_text_layout">
+            <Button android:textSize="19.0sp" android:id="@id/comment_list_item_btn_recomment" android:focusable="false" android:layout_width="133.0dip" android:layout_height="40.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="7.0dip" android:text="@string/new_comment" style="@style/common_button" />
+            <Button android:textSize="19.0sp" android:id="@id/comment_list_item_btn_discuss" android:focusable="false" android:layout_width="133.0dip" android:layout_height="40.0dip" android:layout_marginRight="10.0dip" android:text="@string/new_discuss" android:layout_alignTop="@id/comment_list_item_btn_recomment" android:layout_alignParentRight="true" style="@style/common_button" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

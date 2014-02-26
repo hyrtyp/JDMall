@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@*android:color/transparent" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/my_giftcard_item_bg" android:paddingTop="7.0dip" android:paddingBottom="7.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textSize="12.0dip" android:textColor="@color/bind_gift_card_list_item_text" android:id="@id/gift_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/bind_gift_card_list_item_text" android:id="@id/gift_balance_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_balance" android:layout_below="@id/gift_value" android:layout_alignLeft="@id/gift_value" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/font_red" android:id="@id/gift_balance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/gift_balance_view" android:layout_below="@id/gift_value" />
+        <View android:id="@id/gift_invider" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="2.0dip" android:layout_marginBottom="4.0dip" android:layout_below="@id/gift_balance_view" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/bind_gift_card_list_item_text" android:id="@id/gift_card_number_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card_number" android:layout_below="@id/gift_invider" android:layout_alignLeft="@id/gift_value" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/bind_gift_card_list_item_text" android:id="@id/gift_card_number" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/gift_card_number_view" android:layout_below="@id/gift_invider" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/bind_gift_card_list_item_text" android:id="@id/gift_validity_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/gift_card_number_validity" android:layout_below="@id/gift_card_number_view" android:layout_alignLeft="@id/gift_value" />
+        <TextView android:textSize="12.0dip" android:textColor="@color/bind_gift_card_list_item_text" android:id="@id/gift_validity_range" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/gift_validity_view" android:layout_below="@id/gift_card_number_view" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/fill_order_title" layout="@layout/title" />
+    <ScrollView android:id="@id/regist_scroller" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/fill_order_title">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/submit_info" android:background="@drawable/background_corners" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip">
+                <TextView android:textSize="20.0dip" android:textColor="#ff1a1a1a" android:id="@id/msg_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/order_completed" android:layout_centerHorizontal="true" />
+                <TextView android:textSize="15.0dip" android:textColor="#ff1a1a1a" android:id="@id/order_no" android:paddingLeft="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/order_bumber" android:layout_below="@id/msg_hint" />
+                <TextView android:textSize="15.0dip" android:textColor="#ff1a1a1a" android:id="@id/order_no_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:text="test" android:layout_toRightOf="@id/order_no" android:layout_below="@id/msg_hint" />
+                <TextView android:textSize="15.0dip" android:textColor="#ff1a1a1a" android:id="@id/pay_money" android:paddingLeft="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/pay_money" android:layout_below="@id/order_no" />
+                <TextView android:textSize="15.0dip" android:textColor="#ff1a1a1a" android:id="@id/pay_money_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="test" android:layout_toRightOf="@id/pay_money" android:layout_below="@id/order_no" />
+                <TextView android:textSize="15.0dip" android:textColor="#ff1a1a1a" android:id="@id/pay_way" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/send_type2" android:layout_below="@id/pay_money" />
+                <TextView android:textSize="15.0dip" android:textColor="#ff1a1a1a" android:id="@id/pay_way_content" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginBottom="10.0dip" android:text="test" android:layout_toRightOf="@id/pay_way" android:layout_below="@id/pay_money" />
+                <TextView android:textColor="#ff15b815" android:id="@id/complete_no_register_tips" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_below="@id/pay_way" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/submit_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/submit_info">
+                <TextView android:textSize="15.0dip" android:textColor="#ff1a1a1a" android:id="@id/pay_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="test" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/submit_completed" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:layout_below="@id/submit_msg">
+                <Button android:textSize="16.0dip" android:textColor="#ff1a1a1a" android:gravity="center" android:id="@id/submit_completed_btn" android:layout_width="130.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="@string/completed" android:layout_centerHorizontal="true" style="@style/common_button" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

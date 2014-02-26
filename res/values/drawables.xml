@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="drawable" name="search_list_normal">#ffe6e6e6</item>
+    <item type="drawable" name="category_odd_row_normal">#ffffffff</item>
+    <item type="drawable" name="category_even_row_normal">#ffffffff</item>
+    <item type="drawable" name="product_odd_row_normal">#ffffffff</item>
+    <item type="drawable" name="product_even_row_normal">#ffffffff</item>
+    <item type="drawable" name="list_row_mormal">#ffffffff</item>
+    <item type="drawable" name="list_row_zeng">#fffffddd</item>
+    <item type="drawable" name="list_row_pressed">#ffeeeeee</item>
+    <item type="drawable" name="none">#00000000</item>
+    <item type="drawable" name="product_detail_row_pressed">#ffeeeeee</item>
+    <item type="drawable" name="sign_list_self">#ffeaedef</item>
+    <item type="drawable" name="signin_none">#00000000</item>
+</resources>

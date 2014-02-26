@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:id="@id/app_limit_buy_sale_layou" android:background="@drawable/app_limit_buy_sale_bg" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/app_limit_buy_sale_jdPrice" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip" android:layout_marginTop="5.0dip" android:layout_weight="1.0">
+        <TextView android:textColor="@color/limit_buy_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_buy_price" />
+        <com.jingdong.app.mall.utils.ui.PriceTextView android:textSize="17.0sp" android:textColor="@color/font_red" android:ellipsize="end" android:id="@id/app_limit_buy_sale_text_jdPrice" android:layout_width="70.0dip" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="12" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/app_limit_buy_sale_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:layout_weight="1.5">
+        <TextView android:textColor="@color/limit_buy_text_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/limit_buy_discount" />
+        <TextView android:textColor="@color/limit_buy_green" android:id="@id/app_limit_buy_sale_text_discount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="6" />
+    </LinearLayout>
+</LinearLayout>
